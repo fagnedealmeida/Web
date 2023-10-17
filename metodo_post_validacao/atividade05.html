@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title> valicação de formulário</title>
+	<link rel="stylesheet" type="text/css" href="atividade05.css">
+<!-- importando arquivo CSS para dentro do código html -->
+</head>
+
+<body>
+<!-- importando arquivo JS para dentro do cógido html-->
+	<script src="atividade05.js"></script>
+
+<!-- Utilizando o método post para o formulario, conteúdo do 
+formulario dentro da requisição.-->
+	<fieldset><legend>Validação de dados</legend>
+	<form method="post" action="https://formspree.io/f/mwkzkjbw" name="forms1">
+		Nome:
+		<input name="name" type="text" size="30"><br>
+		<br>
+		Idade:
+		<input name="idade" type="text" size="8"><br>
+		<br>
+		Estado Civil:
+		<select name="Estado" > 
+			<option value="solteiro" selected> Solteiro </option>
+			<option value="casado"> Casado </option>
+			<option value="divorciado"> Divorciado </option>
+			<option value="viuvo"> Viúvo </option>
+		</select>	
+		<br>
+		<br>
+		Data de Cadastro:
+		<input name="data" type="date">
+		<br>
+		<br>
+<!-- Aplicando uma interação para uso de uma função, além de sinalizar com RETURN
+a condição de uso da função, neste caso validar os dados.-->
+		<input onclick=" return validarDados()" name="submeter" type="submit" value="Enviar">
+		<input name="reiniciar" type="reset" value="Limpar">
+		
+	</form>
+	</fieldset>
+
+</body>
+
+</html>

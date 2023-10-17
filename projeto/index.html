@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtora IFPB </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Nunito:wght@700&family=Yellowtail&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" herf="normalize.css" />
+    <link rel="stylesheet" href="slider.css">
+
+</head>
+
+<body>
+    <script src="mensagem.js"></script>
+    <nav>
+        <p onmouseover="mensagem()"> ConstrutIFPB</p>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#emprendimentos">Empreendimentos</a></li>
+            <li> <a href="#fotos"> Fotos </a></li>
+            <li><a href="#contato">Contatos</a></li>
+            
+        </ul>
+
+    </nav>
+
+    <header id="topo">
+        <h1> Construtora de Empreendimentos Residenciais</h1>
+        <div class="slider">
+
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+    
+                
+                <div class="slide first">
+                    <img src="img/01.jpg" alt="slide1">
+                </div>
+    
+                <div class="slide">
+                    <img src="img/02.jpeg" alt="slide2">
+                </div>
+    
+                <div class="slide">
+                    <img src="img/03.jpg" alt="slide3">
+                </div>
+    
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+    
+                
+            </div>
+    
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+    
+    
+        </div>
+          
+    </header>
+    <script src="slider.js"></script>  
+    <script src="form.js"></script>
+    <section id="sobre">
+        <h2> Sobre </h2>
+        <p> Nossa empresa é formada por alunos e ex-alunos do IFPB que ainda mantiveram o vínculo com a instituição, 
+            iniciamos com carater de empresa júnior no ano de 2013 como resultado de um projeto de extensão. Nesse período, fomos ganhando destaque a partir das
+            premiações que recebemos, e também, pela participação em eventos apresentando nossos projetos. Dessa forma, com a articulação dos professores orientadores
+            o sucesso de projetos, desenvolvendo para a comunidade local de Campina Grande-PB, foi imediato.
+            Todos os nossos setores são compostos, em grande maioria, de alunos e ex-alunos seja na parte de construção civil, adminstração, tecnologia, comercial e jurídica.
+            Nesses quase 10 anos de empresa, pudemos contribuir e alinhar nossos trabalhos tanto na esfera privada, quanto na pública.
+        </p>
+        
+        <form action="https://formspree.io/f/mvoygbjd" method="post" id="cadastro">
+            Você quer receber ofertas da nossa imobiliária?<br>
+            Telefone:<br>
+            <input type="text" name="telefone" required minlength="9" placeholder="(xx)xxxxx-xxxx"><br>
+            <input type="submit" name="enviar" value="Enviar">
+                       
+        </form>
+
+    </section>
+
+    <section id="emprendimentos">
+        <h2> Nosso diferencial em empreendimentos</h2>
+
+        <div class="img">
+
+            <img src="img/p1.png" widht="100" height="100" alt="img1">
+            <h3>Ambientes harmônicos</h3>
+            <p>Proporcionamos o real sentido de 'lar' com sensação de aconchego e segurança. Para famílias que fazem parte de nossos empreendimentos
+             a felicidade e bem-estar estão sempre presentes.     </p>
+        </div>
+
+        <div class="img">
+
+            <img src="img/p2.jpg" widht="100" height="100" alt="img2">
+            <h3>Um novo conceito de moradia</h3>
+            <p>Oferemos o que tem de mais moderno com relação a infraestratura, design e arquitetura. Aplicadas tecnologias que possibilitem uma ênfase no contemporâneo.
+
+            </p>
+        </div>
+
+        <div class="img">
+            <img src="img/p3.png" widht="100" height="100" alt="img3">
+            <h3>Ofertas imperdíveis</h3>
+            <p>Nossos planos de financiamento trabalham com as melhores taxas, além de possibilidade de entrada 0. 
+                Trabalhamos com uma análise individualizada da situação financeira do interessado, assim, aplicando as melhores condições.</p>
+        </div>
+
+        <div class="img">
+            <img src="img/p4.jpg" widht="100" height="100" alt="img4">
+            <h3>Qualidade e Credibilidade</h3>
+            <p>Nossos empreendimentos somados possuem cerca de 7mil clientes, uma carteira de clientes que confirma nossa qualidade e tradição. 
+                Processos e procedimentos que seguem todas as normas necessárias, em todas as fases do empreendimento. </p>
+        </div>
+
+    </section>
+
+    <section id="fotos">   
+        <h2> Fotos</h2>
+        <img src="img/foto1.jpg" alt="foto1" onclick="abrir()">
+        <img src="img/foto2.jpg" alt="foto2" onclick="abrir()">
+        <img src="img/foto3.jpg" alt="foto3" onclick="abrir()">
+        <img src="img/foto4.jpg" alt="foto4" onclick="abrir1()">
+        <img src="img/foto5.jpg" alt="foto5" onclick="abrir()">
+        <img src="img/foto6.jpg" alt="foto6" onclick="abrir()">
+    </section>
+
+    <section id="contato">
+        <h2> Contatos</h2>
+        <p> Vem falar com a gente</p>
+
+        <div>
+            <img src="img/tel.jpg" width="40" height="40" alt="tel">
+            <p> <a herf="tel:991521750">(83)99152-1750</a></p>
+        </div>
+
+        <div>
+            <img src="img/email.jpg" width="40" height="40" alt="email">
+            <p><a herf="mailto:fagnedealmeida@outlook.com">fagnedealmeida@outlook.com</a></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="#topo"> Voltar</a>
+        <p> Desenvolvido por Fagne de Almeida</p>
+    </footer>
+</body>
+
+</html>

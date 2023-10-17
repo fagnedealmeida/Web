@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<title>Questão 1</title>
+		<style>
+		
+		div {
+			display: inline-block;
+		}
+		
+		.container{
+			
+		}
+		
+		.ifpb{
+			display: inline-block;
+			font-weight: bold;
+		}
+		img {
+			position: relative;
+			top:-30px;
+			
+		}
+		
+		p{
+			font-family: Arial;
+			
+		}
+		</style>
+		
+	</head>
+	<body>
+	<!-- Para colocar TEXTO ao lado da IMAGEM, por padrão o texto é um conteúdo em bloco(ocupando toda a extensão da tela)
+	então, tem-se que alterar a configuração CSS do display do texto alvo, colocando 'inline-block' 
+	outro caso é colocar os elementos dentro deu uma div e aplicar estilo de display flex.	--> 
+		
+		<div class="texto"><p> Instituto Federal da Paraíba </p>
+		<p> Campus Campina Grande </p>
+		<p onmouseover="mensagem()"> Curso de Informática</p>
+		<p class="ifpb" onclick="salvar()"> SALVAR -</p> 
+		<p class="ifpb" onclick="abrirSite()"> PORTAL -</p> 
+		<p class="ifpb" onclick="fecharJanela()">FECHAR </p>
+		</div>
+		<div class="container">
+		<img src="https://www.ifpb.edu.br/imagens/logotipos/ifpb-1" width= "80px" height="100px"/></div>
+		
+		<script>
+			function mensagem(){
+				alert("Curso TOP!");
+			}
+			
+			function abrirSite(){
+				open("https://suap.ifpb.edu.br/accounts/login/?next=/");
+			}
+			
+			function fecharJanela(){
+				close();
+			
+			}
+			
+			function salvar(){
+				alert("Site em Manutenção !");
+			
+			}
+		</script>
+	</body>
+</html>

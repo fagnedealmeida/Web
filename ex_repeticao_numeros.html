@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title> Exemplo aula </title>	
+	</head>
+	
+	<body>
+		<script>
+			var contador = 0;
+			var soma = 0;
+			
+			for (var i = 1; i <= 5; i++){
+			
+				var numero = Number(prompt("Digite o número "  + i));
+				
+				if (numero % 2 == 0 ){ 
+					contador++;
+					soma = soma + numero;
+				}
+			}
+			
+			var media = soma/contador;
+			alert("A média dos " + contador +  " números pares é: " + media);
+			
+		</script>
+	</body>
+</html>

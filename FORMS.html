@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Formulário elaborado</title>
+  <style>
+    fieldset {
+      width: 500px;
+    }
+
+    legend {
+      border: 2px;
+      padding: 5px;
+
+
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<!- CÓDIGO DE UM FORMULÁRIO QUE USA JS PARA FAZER UM CAMPO DE BUSCA(select) COM AUTOPREENCHIMENTO ->
+
+<body>
+  <h1> Formulário </h1>
+
+  <fieldset>
+    <legend><b>Dados Pessoais</b><br></legend>
+
+    <form action="agente" method="método">
+      Nome:
+      <input name="name" type="text" size="40"><br>
+      Endereço:
+      <input name="endereço" type="text" size="40"><br>
+      Cidade:
+      <input name="cidade" type="text" size="40"><br>
+      Estado:
+      <select name="Estado" class="select2">
+        <option value="estado1"> Paraíba </option>
+        <option value="estado2"> Rio Grande do Norte </option>
+        <option value="estado3"> Pernanbuco </option>
+        <option value="estado4"> Bahia</option>
+        <option value="estado5"> Alagoas </option>
+        <option value="estado6"> Sergipe </option>
+        <option value="estado7"> Ceará </option>
+        <option value="estado8"> Maranhão</option>
+        <option value="estado9"> Tocantis </option>
+        <option value="estado10" selected> São Paulo</option>
+        <option value="estado11"> Rio de Janeiro</option>
+        <option value="estado12"> Espirito Santo</option>
+        <option value="estado13"> Minas Gerais</option>
+        <option value="estado14"> Santa Catarina </option>
+        <option value="estado15">Paraná </option>
+        <option value="estado16"> Goiás </option>
+        <option value="estado17"> Mato Grosso </option>
+        <option value="estado18"> Mato Grosso do Sul </option>
+        <option value="estado19"> Acre </option>
+        <option value="estado20"> Amazonas </option>
+        <option value="estado21"> Belém </option>
+        <option value="estado22"> Amapá </option>
+        <option value="estado23"> Rondônia</option>
+        <option value="estado24"> Roraíma </option>
+        <option value="estado25"> Piauí </option>
+        <option value="estado26"> Distrito Federal</option>
+
+      </select>
+  </fieldset>
+  <br>
+
+
+  <fieldset width="500">
+    <legend><b>Dados profissionais</b><br></legend>
+
+    Natureza do Cargo:<br>
+    <input name="cargo1" type="radio" checked="checked">
+    Gerência
+    <input name="cargo1" type="radio">
+    Financeiro
+    <input name="cargo2" type="radio">
+    Recepção
+    <input name="cargo3" type="radio">
+    Administrativo
+    <input name="cargo4" type="radio">
+    Jurídico
+    <br>
+    <br>
+
+    Área de Interesse<br>
+
+    <input name="area1" type="checkbox">
+    Computação
+    <input name="area2" type="checkbox">
+    Biologia
+    <input name="area3" type="checkbox">
+    Meio Ambiente
+    <input name="area4" type="checkbox">
+    Engenharia
+    <input name="area5" type="checkbox">
+    História
+    <br>
+    <br>
+    Mini-curículo: <textarea name="texto" maxlength="100" rows="5" cols="50">
+		</textarea>
+  </fieldset>
+
+  <br>
+  <input name="submeter" type="submit" value="Enviar">
+  <input name="reiniciar" type="reset" value="Limpar">
+
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script>
+  <!- O ID O CAMPO ALVO DEVE ESTÁ DENTRO DA FUNÇÃO, NO CASO SELECT2 ->
+    $(document).ready(function () {
+      $('.select2').select2();
+    });
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 </title>
+</head>
+<body>
+
+    <input type="text" id="frase" placeholder="Digite uma frase"/>
+    <button type="submit" id="btn">Verificar</button>
+    <script>
+
+        <!- Pegando o elemento com DOM->
+
+        var btn = document.getElementById('btn');
+	<!- Criando evento com click para o elemento->
+
+        btn.addEventListener('click', function() {
+		<!- Criando variável para captura dado do input, usando REPLACE para eliminar caracteres inválidos conforme regex ->
+            var frase = document.getElementById('frase').value.replace(/[^a-zA-Z0-9]+/g, "");
+            alert( "Frase possuiu " + frase.length + " letras");
+            console.log(frase.length);
+            console.log(frase);
+        } )
+
+       
+    </script>
+</body>
+</html>

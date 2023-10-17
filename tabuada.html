@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> TABUADA </title>
+		<style>
+		td, tr {
+			width: 40px;
+			text-align: center;
+			font: 14px Verdana;
+
+		}
+		table {
+			border-collapse: collapse;
+		}
+		tr:nth-child(even){
+			background:lightgray;
+		}
+		</style>
+	</head>
+	<body>
+		<script>
+			function tabuada(){
+				var numero = Number(prompt("Escolha um número: "));
+				for( var i = 10; i >= 1; i--){
+					
+					var tb = document.getElementById("tabuada");
+					var lin = tb.insertRow(1);
+					
+					var n = lin.insertCell(0);
+					var x = lin.insertCell(1);
+					var mult = lin.insertCell(2);
+					var igual = lin.insertCell(3);
+					var total = lin.insertCell(4);
+					
+					
+					n.innerHTML = numero;
+					total.innerHTML = (numero*i);
+					mult.innerHTML = i;
+					x.innerHTML = "x";
+					igual.innerHTML = "=";
+					
+				
+			
+			
+				}
+			}
+				
+		</script>
+		<div id="tabela">
+			<table border="1" id="tabuada">
+				<tr>
+					<td>Nº</td>
+					<td>#</td>
+					<td>Mult.</td>
+					<td>#</td>
+					<td>Total</td>
+				</tr>
+			
+			
+			</table>
+		</div>
+		<br>		
+		<input type="button" value="GERAR TABUADA" onclick="tabuada()" />
+		
+		<br>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática</title>
+    <style>
+        .cidades{
+            font-style: italic;
+            width: 150px;
+        }
+        .estados{
+            width: 150px;
+            height: 80px;
+        }
+        .regiao{
+            width: 60px;
+        }
+        .titulo{
+            font-style: italic;
+            font-weight: bold;
+        }
+        table, td, th{
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<!- CÓDIGO DE TABELA QUE FAZ USO DA FUNÇÃO DE MESCLAR CELULAR rowspan e colspan ->
+<body>
+    <table>
+        <caption class="titulo">Sudeste x Sul</caption>
+        <tr>
+            <th colspan="2">Estados</th>
+            <th>Cidades</th>   
+       </tr>
+
+        <tr>
+            <td rowspan="12" class="regiao">Sudeste</td>
+            <td rowspan="3" class="estados">São Paulo</td>
+            <td class="cidade">São Paulo</td>
+        </tr>
+
+        <tr>            
+            <td class="cidades">Guarulhos</td>
+        </tr>
+
+        <tr>          
+            <td class="cidades">Campinas</td>
+        </tr>
+
+        <tr>                 
+            <td rowspan="3" class="estados">Rio de Janeiro</td>
+            <td class="cidades">Rio de Janeiro</td>
+        </tr>
+
+        <tr>           
+            <td class="cidades">São Gonçalo</td>
+        </tr>
+
+        <tr>            
+            <td class="cidades">Duque de Caxias</td>
+        </tr>
+
+        <tr>           
+            <td rowspan="3" class="estados">Minas Gerais</td>
+            <td class="cidades">Belo Horizonte</td>
+        </tr>
+
+        <tr>               
+            <td class="cidades">Uberlândia</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Contagem</td>
+        </tr>
+
+        <tr>           
+            <td rowspan="3" class="estados">Espírito Santo</td>
+            <td class="cidades">Vila Velha</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Serra</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Cariacica</td>
+        </tr>
+
+        <tr>
+            <td rowspan="9" class="regiao">Sul</td>
+            <td rowspan="3" class="estados">Rio Grande do Sul</td>
+            <td class="cidades">Porto Alegre</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Caxias do Sul</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Pelotas</td>
+        </tr>
+
+        <tr>     
+            <td rowspan="3" class="estados">Paraná</td>
+            <td class="cidades">Curitiba</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Londrina</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Maringá</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" class="estados">Santa Catarina</td>
+            <td class="cidades">Joinville</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Florianópolis</td>
+        </tr>
+
+        <tr>
+            <td class="cidades">Blumenau</td>
+        </tr>
+
+          
+
+    </table>
+    
+</body>
+</html>

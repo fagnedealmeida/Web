@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: stretch;
+}
+.superior{
+    justify-content: space-between;
+    display: flex;
+    height: 50vh;
+}
+.inferior{
+    justify-content: space-between;
+    display: flex;
+    height: 50vh;
+    align-items: flex-end;
+}
+.verde{
+    height: 50px;
+    width: 50px;
+    background: green;
+}
+  .amarelo {
+    height: 50px;
+    width: 50px;
+    background: yellow;
+}
+  .vermelho{
+    height: 50px;
+    width: 50px;
+    background: #b91818;
+}
+  .azul{
+    height: 50px;
+    width: 50px;
+    background: blue;
+}

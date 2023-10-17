@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Questão 4 </title>
+	
+</head>
+<body> 
+	<script>
+	
+	alert("BEM-VINDO AO RESTAURANTE !!");
+	
+	var nome = prompt("Digite o seu nome: ");
+	var peso = prompt("Digite o peso da refeição: ");
+	var desconto1 = prompt("Digite o desconto: ");
+	
+	var refeicao = parseFloat((peso/1000) * 44.50);
+	
+	
+	var desconto2 = parseFloat(refeicao * (desconto1/100));
+	
+	alert(desconto2);
+
+	var pagamento = parseFloat(refeicao - desconto2);
+	
+	n = pagamento.toFixed(2);
+	
+	alert(" O valor a ser pago pelo cliente " + nome + " é " + "R$" + n);
+	
+	</script>
+
+
+</body>
+</html>

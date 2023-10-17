@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<title>Questão 1</title>
+		<h1>FUNÇÕES</h1>
+	</head>
+	<body>
+		<button onmousedown="aperta()" onmouseup="solta()"> Clique neu ! </button>
+		<div id="status"></div>
+		<script>
+			function aperta(){
+			var status=document.getElementById("status");
+			status.innerHTML="Você está apertando o botão do mouse";
+			}
+			
+			function solta(){
+			var status=document.getElementById("status");
+			status.innerHTML="Você soltou o botão do mouse:";
+			}
+		</script>
+	</body>
+</html>

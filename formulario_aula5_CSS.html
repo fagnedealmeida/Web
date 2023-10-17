@@ -1,0 +1,76 @@
+<html>
+<head> <meta charset="UTF-8">
+<title>Formulário com CSS</title></head>
+<style> 
+
+body{
+	background-color: palegreen;
+	font-family: sans-serif;
+	font-size: 1em;
+	margin-left: 36%;
+	justify-content: center;
+	margin-top: 2%;
+		
+}
+input,textarea{
+	border-radius: 5px;
+	margin-botton: 1em;
+	margin-right: 1em;
+}
+input[type="email"], input[type="text"], textarea{
+	padding: 0.2em;
+	border: 1px solid;
+	box-shadow: 2px 2px 2px;
+	display: block;
+	
+}
+input[type="submit"], input[type="reset"]{
+	font-size: 1.2em;
+	border: 0;
+	margin-botton: 
+	padding: 0.2em 0.6em;
+	box-shadow: 2px 2px 2px;
+	text-shadow: 1px;
+}
+
+</style>
+<body> 
+<form method="get" action="não sei ainda">
+ Nome do Livro: 
+<input name="livro" type="text" size="40"required> <br>
+ Nome do Autor: 
+<input name="autor" type="text" size="40" required> <br>
+ Edição:
+<input name="edicao" type="number" placeholder="1 à 10" min="1" max="10"> <br>
+ Data de publicação:
+<input name="data" type="date" min="1" max="10"> <br>
+ Email da editora:
+<input name="email" type="email" placeholder="exemplo@exemplo.com" required> <br>
+ Foto do livro
+<input name="foto" type="file"> <br>
+<br>
+ Temática:<br>
+ Ciência Exata
+<input name="tema" type="checkbox"> 
+ Ciência Natureza
+<input name="tema1" type="checkbox"><br>
+ Ciência Humanas
+<input name="tema2" type="checkbox">
+ Ciência Linguística
+<input name="tema3" type="checkbox"><br>
+<br>
+ Possui versão digital:<br>
+ Sim
+<input name="digital" type="radio">
+ Não
+<input name="digital" type="radio"><br>
+<br>
+ Abstract: <textarea name="texto" maxlength="100" rows="5" cols="48"> Resumo do livro, máx. 100 caracteres 
+		</textarea>
+		<br><br>
+<input name="submeter" type="submit" value="Enviar">
+<input name="reiniciar" type="reset" value="Limpar">
+</form></body>
+
+
+</html>
